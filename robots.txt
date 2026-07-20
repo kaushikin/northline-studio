@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://northline-studio.vercel.app/sitemap.xml
