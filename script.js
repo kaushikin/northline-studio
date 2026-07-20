@@ -25,12 +25,14 @@ form?.addEventListener("submit", (e) => {
   const name = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const need = document.getElementById("need").value;
+  const location = document.getElementById("location")?.value || "";
   const msg = document.getElementById("msg").value.trim();
   const text = [
     "Hi Northline, I want a quote.",
     `Name: ${name}`,
     `Phone: ${phone}`,
     `Need: ${need}`,
+    location ? `Location: ${location}` : "",
     msg ? `Brief: ${msg}` : "",
   ].filter(Boolean).join("\n");
   window.open(`https://wa.me/919483874076?text=${encodeURIComponent(text)}`, "_blank", "noopener");
