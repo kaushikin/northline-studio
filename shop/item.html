@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northline Pick</title>
+  <meta name="description" content="Northline product pick. Affiliate links to Amazon, Flipkart, Myntra, or ClickBank." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Northline Pick" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#070a12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b82f6'/%3E%3Cpath d='M8 22 L16 8 L24 22' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo" aria-label="Northline home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 L12 5 L20 18"/></svg>
+        </span>
+        Northline
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html">Studio</a>
+        <a href="./">Picks</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html" data-close>Studio</a>
+    <a href="./" data-close>Picks</a>
+    <a href="../index.html#contact" data-close>Contact</a>
+  </div>
+
+  <div class="affiliate-bar">
+    #ad / Amazon Associate: if you buy through the Amazon button we may earn a commission. Price is the same for you.
+  </div>
+
+  <main>
+    <section class="hero shop-hero">
+      <div class="container shop-product" id="productRoot"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        As an Amazon Associate we earn from qualifying purchases.<br />
+        <a href="./">All picks</a> · <a href="../index.html">Studio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="products.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>
