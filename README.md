@@ -1,6 +1,6 @@
 # Northline Studio
 
-Portfolio & sales site for **Northline** — websites and social media marketing.
+Portfolio & sales site for **Northline** — websites, social media marketing, and **Northline Cover** (health / life / motor insurance across India, IRDAI SHABA0000582508).
 
 ## Live contact
 - WhatsApp: +91 94838 74076

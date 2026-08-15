@@ -37,3 +37,20 @@ form?.addEventListener("submit", (e) => {
   ].filter(Boolean).join("\n");
   window.open(`https://wa.me/919483874076?text=${encodeURIComponent(text)}`, "_blank", "noopener");
 });
+
+const coverForm = document.getElementById("coverQuote");
+coverForm?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const type = document.getElementById("coverType")?.value || "";
+  const city = document.getElementById("coverCity")?.value.trim() || "";
+  const age = document.getElementById("coverAge")?.value.trim() || "";
+  const phone = document.getElementById("coverPhone")?.value.trim() || "";
+  const text = [
+    "Hi Northline Cover, I want an insurance quote.",
+    `Type: ${type}`,
+    city ? `City: ${city}` : "",
+    age ? `Age: ${age}` : "",
+    `WhatsApp: ${phone}`,
+  ].filter(Boolean).join("\n");
+  window.open(`https://wa.me/919483874076?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+});
