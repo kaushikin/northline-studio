@@ -1,11 +1,41 @@
 /**
- * Northline Picks — affiliate catalog
+ * HOW TO ADD AN AMAZON PRODUCT (no Grok needed)
  *
- * YouTube / ads: https://www.gonorthline.uk/shop/item.html?p=SLUG
- * Never auto-redirect. Visitor must click a store button.
+ * 1. Put a square/packshot image here:
+ *    assets/shop/your-product.png
  *
- * Amazon only for now (Associates tag kaushikbn-21).
- * ExtraPe / Flipkart / Myntra / Meesho can wait.
+ * 2. Copy the block below, paste it AFTER the sunscreen product
+ *    (keep the comma between products).
+ *
+ * 3. Change only: slug, name, image filename, blurb, take, who, skip,
+ *    and the Amazon link.
+ *    slug = short-kebab-name  e.g. "boat-earbuds"
+ *
+ * 4. YouTube / ads / comment link is always:
+ *    https://www.gonorthline.uk/shop/item.html?p=YOUR-SLUG
+ *
+ * 5. Save, then git add / commit / push (or tell Grok "push picks").
+ *
+ * Amazon tag kaushikbn-21 is added automatically if missing.
+ * Never auto-redirect. Visitor must tap Amazon.
+ *
+ * TEMPLATE (uncomment and edit):
+ *
+ *  {
+ *    slug: "new-product",
+ *    name: "Product name",
+ *    category: "Beauty",
+ *    image: "../assets/shop/new-product.png",
+ *    stores: ["amazon"],
+ *    priceNote: "Size · typical price band",
+ *    blurb: "One or two honest sentences.",
+ *    take: "Your real opinion. Who it is for. Any catch.",
+ *    who: "Who should buy",
+ *    skip: "Who should skip",
+ *    links: {
+ *      amazon: "https://www.amazon.in/dp/ASIN?tag=kaushikbn-21",
+ *    },
+ *  },
  */
 window.NORTHLINE_AFFILIATE = {
   amazonTag: "kaushikbn-21",
@@ -29,6 +59,21 @@ window.NORTHLINE_PRODUCTS = [
     skip: "Very oily or reactive skin until you have patch-tested; anyone needing a water-sport / sweat-proof sport sunscreen",
     links: {
       amazon: "https://www.amazon.in/dp/B0CW5BK193?tag=kaushikbn-21",
+    },
+  },
+  {
+    slug: "vilvah-skin-finish-sunscreen",
+    name: "Vilvah Skin Finish Sunscreen SPF 50 PA++++",
+    category: "Beauty",
+    image: "../assets/shop/vilvah-skin-finish-sunscreen.jpg",
+    stores: ["amazon"],
+    priceNote: "50ml · usually around ₹549–599",
+    blurb: "Lightweight gel-cream SPF 50 PA++++ from Vilvah — rice milk, ectoin, and new-age UV filters. Made for Indian skin and humidity. No white-cast claim.",
+    take: "Second Northline Pick, and the one you shared. This is Vilvah’s newer Skin Finish tube (not the older Melt-in-Milk). Amazon listing is ASIN B0GPDC2S47: SPF 50 PA++++, water-resistant, unisex, rice milk + ectoin + brown algae + mulberry. Ratings sit around 4.3 from 140+ Amazon reviews; Vilvah’s own site has a few hundred more, mostly on no white cast and a skin-like finish. We would use it as a daily city / commute sunscreen under humidity, including under makeup. Reapply after sweat or a few hours — water-resistant is not all-day beach sport cover. Patch-test if your skin is reactive. Check you are buying Skin Finish SPF 50 PA++++, not the older Melt-in-Milk SPF 50 PA+++ listing.",
+    who: "People who want a no-white-cast daily SPF 50 for Indian weather, including oily and mixed skin",
+    skip: "Anyone needing a certified sport / water-sport sunscreen, or anyone who has not patch-tested sensitive skin",
+    links: {
+      amazon: "https://www.amazon.in/dp/B0GPDC2S47?tag=kaushikbn-21",
     },
   },
 ];
