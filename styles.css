@@ -59,6 +59,12 @@ button,input,textarea,select{font:inherit}ul{list-style:none}
 .samples-fold[open] summary::after{content:" −"}
 .samples-fold[open] summary{margin-bottom:1rem}
 .samples-grid{grid-template-columns:repeat(3,1fr)}
+.legal{max-width:720px}
+.legal h2{font-family:var(--display);font-size:1.25rem;margin:1.75rem 0 .6rem}
+.legal p,.legal li{color:var(--muted)}
+.legal ul{padding-left:1.2rem;list-style:disc;margin:.4rem 0 1rem}
+.legal li{margin:.3rem 0}
+.legal strong{color:var(--text)}
 .cover-page{--bg:#0a1018;--bg-2:#101820;--accent:#3d8b6e;--accent-2:#7dcea0}
 .cover-page .bg-glow{background:radial-gradient(800px 420px at 8% -8%,rgba(61,139,110,.2),transparent 55%),radial-gradient(600px 360px at 90% 8%,rgba(125,206,160,.08),transparent 50%),var(--bg)}
 .cover-hero{padding-bottom:2rem}
