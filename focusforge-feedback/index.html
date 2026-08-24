@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FocusForge tester feedback</title>
+  <meta name="description" content="Send FocusForge closed-test feedback to FocusForge Labs." />
+  <link rel="canonical" href="https://www.gonorthline.uk/focusforge-feedback/" />
+  <meta name="theme-color" content="#070a12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b82f6'/%3E%3Cpath d='M8 22 L16 8 L24 22' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4"><path d="M4 18 L12 4 L20 18" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Northline
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html">Studio</a>
+        <a href="../focusforge-privacy/">Privacy</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html" data-close>Studio</a>
+    <a href="../focusforge-privacy/" data-close>Privacy</a>
+  </div>
+
+  <main>
+    <section class="hero" style="padding-bottom:1rem">
+      <div class="container" style="max-width:720px">
+        <p class="eyebrow"><span class="dot"></span> FocusForge · closed test</p>
+        <h1>Send tester feedback</h1>
+        <p class="hero-lead">You are testing FocusForge by FocusForge Labs. Tell us what broke, what confused you, or what you liked. WhatsApp is the fastest.</p>
+      </div>
+    </section>
+    <section style="padding-bottom:4rem">
+      <div class="container" style="max-width:560px">
+        <form class="contact-form" id="ffFeedback">
+          <h2>Your notes</h2>
+          <p class="form-lead">Opens WhatsApp with your message filled in. We read these during the 14-day closed test.</p>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone model</label>
+            <input id="phone" name="phone" placeholder="e.g. Pixel 7, Vivo Y200" />
+          </div>
+          <div class="field">
+            <label for="kind">Type</label>
+            <select id="kind" name="kind">
+              <option>Bug / crash</option>
+              <option>Confusing screen</option>
+              <option>Blocking did not work</option>
+              <option>Something I liked</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">What happened</label>
+            <textarea id="msg" name="msg" required placeholder="What you tapped, what you expected, what you saw…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Send on WhatsApp</button>
+          <p class="form-note">Or email <a href="mailto:hello@gonorthline.uk?subject=FocusForge%20tester%20feedback" style="color:#93c5fd">hello@gonorthline.uk</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--text)">FocusForge Labs</strong> · Tester feedback<br />
+        <span><a href="https://www.gonorthline.uk/">gonorthline.uk</a></span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("ffFeedback").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("name").value.trim();
+      var phone = document.getElementById("phone").value.trim();
+      var kind = document.getElementById("kind").value;
+      var msg = document.getElementById("msg").value.trim();
+      var text = "FocusForge tester feedback%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone || "n/a") + "%0A" +
+        "Type: " + encodeURIComponent(kind) + "%0A" +
+        "Notes: " + encodeURIComponent(msg);
+      window.location.href = "https://wa.me/919483874076?text=" + text;
+    });
+  </script>
+  <script src="../script.js"></script>
+</body>
+</html>
