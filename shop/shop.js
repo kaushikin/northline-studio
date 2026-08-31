@@ -35,6 +35,7 @@ function renderCatalog() {
       (p) => `
       <article class="shop-card">
         ${p.image ? `<img class="shop-card-img" src="${p.image}" alt="${p.name}" />` : ""}
+        ${p.featured ? `<span class="tag" style="align-self:flex-start">Featured</span>` : ""}
         <div class="shop-card-top">
           <span class="tag">${p.category}</span>
           <div class="shop-store-pills">
@@ -70,7 +71,13 @@ function renderProduct() {
 
   root.innerHTML = `
     <p class="eyebrow"><span class="dot"></span> Northline Pick · ${product.category}</p>
-    ${product.image ? `<img class="shop-hero-img" src="${product.image}" alt="${product.name}" />` : ""}
+    ${
+      product.video
+        ? `<video class="shop-hero-video" controls playsinline preload="metadata" poster="${product.image || ""}" src="${product.video}"></video>`
+        : product.image
+          ? `<img class="shop-hero-img" src="${product.image}" alt="${product.name}" />`
+          : ""
+    }
     <h1>${product.name}</h1>
     <p class="hero-lead">${product.blurb}</p>
     <p class="shop-price">${product.priceNote}</p>

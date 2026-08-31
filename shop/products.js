@@ -46,6 +46,23 @@ window.NORTHLINE_AFFILIATE = {
 
 window.NORTHLINE_PRODUCTS = [
   {
+    slug: "gadget-cleaner-kit",
+    name: "5-in-1 gadget cleaning kit",
+    category: "Gadgets",
+    featured: true,
+    image: "../assets/shop/gadget-cleaner-kit.jpg",
+    video: "../assets/shop/gadget-cleaner-kit.mp4",
+    stores: ["amazon"],
+    priceNote: "Compact 5-in-1 · check live Amazon price (offers change)",
+    blurb: "One pocket kit: earbud brush, keycap puller, gap duster, screen cloth, and a phone stand. For dirty AirPods cases, crumbly keyboards, and fingerprint screens.",
+    take: "This is the kit in our Anpavaam short. We would keep one in a desk drawer — earbuds, keys, and a laptop screen all pick up the same dust. It is a small plastic tool, not a magic deep-clean machine: good for weekly wipe-downs, not for pouring liquid into a laptop. Do not yank laptop/scissor-switch keys unless you know they come off. Amazon price and colour can change; ignore on-video ‘77% off’ graphics — always check the listing. We may earn a commission if you buy through the Amazon button. Same price for you.",
+    who: "Anyone whose earbuds case or keyboard looks grey, and who wants one small tool instead of five",
+    skip: "People who need a proper wet screen kit, compressed air, or a full mechanical-keyboard puller set",
+    links: {
+      amazon: "https://link.amazon/B0fluWyP6",
+    },
+  },
+  {
     slug: "minimalist-sunscreen",
     name: "Minimalist Sunscreen SPF 50 PA++++",
     category: "Beauty",
