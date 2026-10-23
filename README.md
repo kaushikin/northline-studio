@@ -18,6 +18,7 @@ Static HTML/CSS/JS — deploy on Vercel.
 
 ## Featured work
 - [CYA](https://www.challengersyouth.org)
+- [Astral Space Yoga](https://astralspaceyoga.in)
 - [Jambebalu](https://jambebalu-entertainment.vercel.app)
 - Studio samples under `/samples`
 - Anpavaam social proof (IG / YT / FB)

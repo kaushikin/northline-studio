@@ -129,6 +129,7 @@ section{padding:5rem 0}
 .work-links a:hover{color:#fff}
 .scene-cya{background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.15),transparent 40%),linear-gradient(145deg,#0b3d91,#1a6bb5 50%,#e8a23a)}
 .scene-jam{background:radial-gradient(circle at 80% 20%,rgba(255,80,120,.35),transparent 40%),linear-gradient(160deg,#1a0b2e,#4a1d6a 55%,#ff6b6b)}
+.scene-astral{background:radial-gradient(circle at 18% 20%,rgba(255,252,247,.22),transparent 42%),linear-gradient(155deg,#1c2430,#6d2748 58%,#d7e6f0)}
 .scene-bistro{background:linear-gradient(160deg,#1c1410,#5c3a21 50%,#c47a3a)}
 .scene-practice{background:linear-gradient(160deg,#0f1f1c,#1a4d45 50%,#7ec8b8)}
 .scene-launch{background:linear-gradient(160deg,#0b1020,#1e3a8a 45%,#67e8f9)}
